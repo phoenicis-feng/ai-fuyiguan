@@ -1,7 +1,6 @@
 ---
-title: "Liftoff"
-description: "A Hugo theme for product-landing, docs, articles and showcase sites."
-
+title: "AI弗一观"
+description: "AI测评、资讯与行业分析，聚焦前沿大模型与AI应用"
 ---
 
-
+欢迎来到 **AI弗一观**，这里提供最新的 AI 资讯、测评以及深度分析文章。
