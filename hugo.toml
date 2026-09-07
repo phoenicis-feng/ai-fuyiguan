@@ -1,6 +1,5 @@
 baseURL = "https://111.com/"
 title = "AI弗一观"
-theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = false
 
