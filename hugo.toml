@@ -1,0 +1,45 @@
+baseURL = "https://111.com/"
+title = "AI弗一观"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = false
+
+[pagination]
+  pagerSize = 6
+
+[params]
+  description = "AI测评  AI资讯，人工智能"
+  showFullContent = false
+  mainSections = ["news", "test"]
+
+[menus]
+  [[menus.main]]
+    name = "主页"
+    pageRef = "/"
+    weight = 5
+  [[menus.main]]
+    name = "AI资讯"
+    pageRef = "/news"
+    weight = 10
+  [[menus.main]]
+    name = "AI测评"
+    pageRef = "/test"
+    weight = 15
+
+
+
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    noClasses = true
+    lineNos = false
+    codeFences = true
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
