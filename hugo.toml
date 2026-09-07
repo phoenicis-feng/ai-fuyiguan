@@ -1,5 +1,6 @@
-baseURL = "https://111.com/"
+baseURL = "https://ai.corret.xyz/"
 title = "AI弗一观"
+theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = false
 
