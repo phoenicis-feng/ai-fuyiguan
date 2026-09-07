@@ -26,9 +26,6 @@ enableEmoji = false
     pageRef = "/test"
     weight = 15
 
-
-
-
 [markup]
   [markup.highlight]
     style = "github-dark"
@@ -38,8 +35,3 @@ enableEmoji = false
     tabWidth = 2
   [markup.goldmark.renderer]
     unsafe = true
-
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.146.0"
