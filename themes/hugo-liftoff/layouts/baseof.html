@@ -4,7 +4,7 @@ Body class is composed from section so site-level CSS can target sections.
 */ -}}
 <!DOCTYPE html>
 {{- $accent := site.Params.accent | default "cyan" -}}
-<html lang="{{ site.Language.Lang }}" dir="{{ or site.Language.Direction `ltr` }}" data-theme="dark"{{ if ne $accent "cyan" }} data-accent="{{ $accent }}"{{ end }}>
+<html lang="{{ site.Language.Lang }}" dir="{{ if site.Language }}{{ site.Language.Direction | default "ltr" }}{{ else }}ltr{{ end }}" data-theme="dark"{{ if ne $accent "cyan" }} data-accent="{{ $accent }}"{{ end }}>
 <head>
   {{ partial "head.html" . }}
 </head>
