@@ -2493,3 +2493,162 @@ th {
 }
 .site-header__brand-mark { display: none !important; }
 .site-header__brand-mark{display:none!important}
+
+/* ============================================================
+   响应式布局
+   ============================================================ */
+
+/* ---------- 文章页双栏布局 ---------- */
+.article-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.article-layout__main {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* ---------- 文章页右栏目录（桌面端） ---------- */
+.article-toc {
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  padding-left: 0.5rem;
+  margin-top: 8rem;
+  margin-left: 1rem;
+}
+
+.article-toc h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.65;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+.article-toc .toc {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.article-toc .toc a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.article-toc .toc a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* ---------- 移动端：标题下方的折叠目录（桌面端隐藏） ---------- */
+.article-toc-mobile {
+  display: none;
+  margin: 0 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-surface);
+  padding: var(--space-3) var(--space-4);
+}
+
+@media (max-width: 960px) {
+  .article-toc-mobile {
+    display: block;
+  }
+}
+
+.article-toc-mobile summary {
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-dim);
+  user-select: none;
+}
+
+.article-toc-mobile[open] summary {
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.article-toc-mobile nav {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.article-toc-mobile a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.article-toc-mobile a:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* ---------- 移动端导航：明暗按钮留在顶栏，不进下拉菜单 ---------- */
+@media (max-width: 880px) {
+  .site-header__actions {
+    display: flex;
+    position: static;
+    order: 2;
+    margin-left: 0;
+  }
+
+  .site-header__menu-toggle {
+    order: 3;
+  }
+
+  .site-header[data-menu-open="true"] .site-header__nav {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-1);
+    padding: var(--space-4);
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+  }
+
+  .site-header[data-menu-open="true"] .site-header__nav ul {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .site-header[data-menu-open="true"] .site-header__actions {
+    display: flex;
+    position: static;
+    order: 2;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+}
+
+/* ---------- 窄屏：目录收进文章标题下方的折叠块 ---------- */
+@media (max-width: 960px) {
+  .article-layout {
+    flex-direction: column;
+  }
+
+  .article-toc {
+    display: none;
+  }
+}
+

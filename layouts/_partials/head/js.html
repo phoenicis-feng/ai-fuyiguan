@@ -1,0 +1,36 @@
+{{- /*
+Site-level scripts. Loaded via theme head.html: {{ partialCached "head/js.html" . }}
+The theme's own main.js is NOT loaded (its toggle-theme handler would
+double-toggle against the inline script in theme head.html), so we ship
+only the handlers this site actually needs.
+*/ -}}
+<script>
+/* Mobile menu toggle: mirrors the logic in the theme's assets/js/main.js */
+document.addEventListener("click", function (event) {
+  var toggle = event.target.closest('[data-action="toggle-menu"]');
+  if (!toggle) return;
+  var header = toggle.closest(".site-header");
+  if (!header) return;
+  var open = header.getAttribute("data-menu-open") === "true";
+  header.setAttribute("data-menu-open", open ? "false" : "true");
+  toggle.setAttribute("aria-expanded", open ? "false" : "true");
+});
+
+/* Code block copy button */
+document.addEventListener("click", function (event) {
+  var btn = event.target.closest('[data-action="copy-code"]');
+  if (!btn) return;
+  var block = btn.closest(".codeblock");
+  var code = block && block.querySelector("pre");
+  if (!code || !navigator.clipboard) return;
+  navigator.clipboard.writeText(code.innerText).then(function () {
+    var original = btn.textContent;
+    btn.setAttribute("data-state", "copied");
+    btn.textContent = btn.getAttribute("data-copied-label") || "已复制";
+    setTimeout(function () {
+      btn.removeAttribute("data-state");
+      btn.textContent = original;
+    }, 1500);
+  });
+});
+</script>
