@@ -51,3 +51,4 @@
 {{- /* RFC: see if we should preload font hints later */ -}}
 
 {{ partialCached "head/js.html" . }}
+<script>document.addEventListener("click",function(e){var b=e.target.closest("[data-action=\"toggle-theme\"]");if(!b)return;var d=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",d);localStorage.setItem("theme",d);});(function(){var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);})();</script>

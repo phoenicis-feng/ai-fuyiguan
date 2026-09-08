@@ -18,10 +18,7 @@ defaultContentLanguage = "zh-cn"
   readingTimePerPage = 100
 
 [params.footer]
-  address = """
-AI弗一观
-https://ai.corret.xyz/
-"""
+  address = ""
 
 [menus]
   [[menus.main]]
