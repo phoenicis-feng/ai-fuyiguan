@@ -1,6 +1,6 @@
 baseURL = "https://ai.corret.xyz/"
 title = "AI弗一观"
-theme = ""
+theme = "hugo-liftoff"
 enableRobotsTXT = true
 enableEmoji = false
 defaultContentLanguage = "zh-cn"
