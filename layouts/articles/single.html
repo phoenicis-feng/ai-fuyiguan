@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <div style="display:flex; gap:2.5rem; align-items:flex-start;">
+    <article class="article" style="flex:1 1 0; min-width:0;">
+      <header class="article__header" style="margin-bottom: 0.5rem;">
+        <h1 class="article__title" style="font-size: 1.6rem; line-height: 1.25;">{{ .Title }}</h1>
+        <div class="article__meta" style="margin-top: 0.35rem; font-size: 0.85rem; opacity: 0.7;">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time>
+          {{- with .Params.author }}<span style="margin-left: 0.4rem;">{{ . }}</span>{{ end }}
+          {{- with .ReadingTime }}<span style="margin-left: 0.4rem;">{{ i18n "reading_time" (dict "Count" .) }}</span>{{ end }}
+        </div>
+      </header>
+
+      <div style="margin: 0.75rem 0 1.25rem; font-size: 0.95rem; opacity: 0.9;">
+        <p style="margin:0; font-style:italic;">{{ .Description }}</p>
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        {{- with .GetTerms "tags" }}
+          <div class="post-card__tags">
+            {{- range . }}<a class="badge" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{- end }}
+          </div>
+        {{- end }}
+      </div>
+
+      <div class="article__body">
+        {{ .Content }}
+      </div>
+
+      {{- with .GetTerms "tags" }}
+        <div class="article__tags" style="margin-top: 1.5rem;">
+          {{- range . }}<a class="badge" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{- end }}
+        </div>
+      {{- end }}
+    </article>
+
+    <aside style="width: 260px; flex-shrink:0; position:sticky; top:2rem; align-self:flex-start;">
+      <h3 style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.05em; opacity:0.65; margin-bottom:0.75rem;">目录</h3>
+      <nav class="toc" style="font-size:0.9rem; line-height:1.5;">
+        {{ .TableOfContents }}
+      </nav>
+    </aside>
+  </div>
+{{ end }}

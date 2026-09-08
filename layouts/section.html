@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      {{ partial "hero.html" . }}
+      {{- if not .Params.hero }}
+        <h1>{{ .Title }}</h1>
+      {{- end }}
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-listing">
+        {{- range .Pages }}
+          {{ partial "post-card.html" . }}
+        {{- end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

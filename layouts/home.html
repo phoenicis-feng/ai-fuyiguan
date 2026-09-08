@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="section">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-listing">
+        {{ range where site.RegularPages "Section" "in" site.Params.mainSections }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

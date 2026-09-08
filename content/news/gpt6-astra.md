@@ -1,0 +1,54 @@
+---
+title: "GPT-6 Astra 深度评测：当 AI 开始自己干活"
+date: 2026-09-04
+author: "AI星球"
+description: "OpenAI 新旗舰 GPT-6 Astra 不只聊天，而是能操作浏览器、填表格、跑代码、做 PPT，自己把活干完再交付。ARC-AGI-3 接近满分，价格 2.5 倍上代，值得企业上车吗？"
+tags: ["GPT-6","Astra","OpenAI","AI评测","Agentic","AGI"]
+draft: false
+---
+
+## 一、从“给答案”到“交成果”
+
+过去 AI 竞品比的是谁更会聊；这次比的是**谁能把事办成**。GPT-6 Astra（代号星辰）定位 computer-use agent，能操控浏览器、办公软件、开发工具完成多步骤工作流，再把成品交给你。
+
+核心变化：不是单模型硬扛，而是**分层协作**：上层接目标和授权边界，中间规划并记住跨上下文信息，下层调度工具执行，再经安全门控交付。长任务不丢线索，推理新增 xhigh/max 档按难度切换。
+
+<div markdown="1" style="display:flex; gap:0.5rem;">
+<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/cover.jpg" alt="GPT-6 Astra" />
+</div>
+
+## 二、关键数据：代际跃升明显
+
+| 维度 | GPT-6 Astra | 上代 GPT-5.6 Sol | 说明 |
+|---|---|---|---|
+| ARC-AGI-3 | 99.9% | 7.8% → 关键跃升 | 抽象推理近满分 |
+| OSWorld 任务完成 | 72.6% | 65.7% | 计算机操作更强 |
+| 平均耗时 | ~40 分钟 | ~75 分钟 | 降约 47% |
+| 上下文窗口 | 105 万 token | 未披露 | 超长文档可处理 |
+
+前面这组数据来自 OpenAI 自家评测，第三方复测尚在进行，读时留一分余量。核心信号不是“满分”，而是**数学/抽象推理/计算机操作三块同时起飞**，整段能力重新排列。
+
+<div markdown="1" style="display:flex; gap:0.5rem;">
+<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/1.png" alt="能力对比" />
+<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/2.png" alt="评测数据" />
+</div>
+
+## 三、实测与使用技巧
+
+**给目标比给提示词省事**：说“把这份财报做成带图表的 PPT”，它自己检索、生成、自检，十几分钟交出版式成品。代价是思考过程更不透明，普通用户还要等灰度。
+
+**最管用的用法**：
+- 目标说清，而不是下指令；
+- 长任务开 xhigh/max 推理档，按难度切换；
+- 涉及敏感权限主动设授权边界（越界率 0%）；
+- 超长上下文（>27.2 万 token）先裁再喂，成本砍一半。
+
+## 四、竞品与价格：谁适合你
+
+- **Astra**：agentic 最深，定价 $10/$50（百万 token），约上代 2.5 倍，适合要批量自动化的企业。
+- **Sol**：性价比基线，约 $4/$20，适合常规任务，不想为 agentic 买单。
+- **Claude Fable 5.1**：OSWorld 报 77.9%（不同版本），长上下文强，定价与 Astra 相近。
+
+> **总结**：能力维度几乎拉满，扣分集中在价格和早期支持。企业自动化团队 ROI 最明显；个人尝鲜者建议等灰度稳定、口碑落地再下注。
+
+<a href="https://www.woshipm.com/ai/6459562.html" target="_blank">点击查看原文</a>

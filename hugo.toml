@@ -1,6 +1,6 @@
 baseURL = "https://ai.corret.xyz/"
 title = "AI弗一观"
-theme = "PaperMod"
+theme = "hugo-liftoff"
 enableRobotsTXT = true
 enableEmoji = false
 
@@ -9,8 +9,19 @@ enableEmoji = false
 
 [params]
   description = "AI测评  AI资讯，人工智能"
+  tagline = "AI弗一观 — 测评与资讯"
+  copyrightOwner = "AI弗一观"
+  copyrightSuffix = "All rights reserved."
   showFullContent = false
   mainSections = ["news", "test"]
+  readingTimePerPage = 100
+
+[params.footer]
+  address = """
+AI弗一观
+https://ai.corret.xyz/
+"""
+
 
 [menus]
   [[menus.main]]
@@ -27,6 +38,10 @@ enableEmoji = false
     weight = 15
 
 [markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
   [markup.highlight]
     style = "github-dark"
     noClasses = true
@@ -35,3 +50,4 @@ enableEmoji = false
     tabWidth = 2
   [markup.goldmark.renderer]
     unsafe = true
+    autoHeadingID = true
