@@ -2492,3 +2492,4 @@ th {
   border-radius: var(--radius-md);
 }
 .site-header__brand-mark { display: none !important; }
+.site-header__brand-mark{display:none!important}
