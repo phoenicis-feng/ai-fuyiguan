@@ -1,16 +1,8 @@
 {{ define "main" }}
+<link rel="stylesheet" href="/css/theme-full.css">
   <section class="section">
     <div class="container">
-      {{ partial "hero.html" . }}
-      {{- if not .Params.hero }}
-        <h1>{{ .Title }}</h1>
-      {{- end }}
-      {{ .Content }}
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
+      <h1 class="section__title" style="font-size:1.6rem;">{{ .Title }}</h1>
       <div class="article-listing">
         {{- range .Pages }}
           {{ partial "post-card.html" . }}

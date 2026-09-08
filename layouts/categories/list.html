@@ -1,0 +1,11 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/theme-full.css">
+<div class="container" style="max-width:900px;margin:0 auto;padding:2rem 1rem;">
+  <h1>{{ .Title }}</h1>
+  <ul style="line-height:2;">
+  {{ range .Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span style="opacity:0.6;font-size:0.85rem;">{{ .Date.Format "2006-01-02" }}</span></li>
+  {{ end }}
+  </ul>
+</div>
+{{ end }}
