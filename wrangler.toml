@@ -1,5 +1,2 @@
 name = "ai-fuyiguan"
-main = "worker.js"
 compatibility_date = "2026-09-08"
-site.bucket = "./public"
-route = "tech.corret.xyz/*"
