@@ -13,8 +13,8 @@ draft: false
 
 核心变化：不是单模型硬扛，而是**分层协作**：上层接目标和授权边界，中间规划并记住跨上下文信息，下层调度工具执行，再经安全门控交付。长任务不丢线索，推理新增 xhigh/max 档按难度切换。
 
-<div markdown="1" style="display:flex; gap:0.5rem;">
-<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/cover.jpg" alt="GPT-6 Astra" />
+<div class="img-row">
+<img src="/img/news/gpt6-astra/cover.jpg" alt="GPT-6 Astra" />
 </div>
 
 ## 二、关键数据：代际跃升明显
@@ -28,9 +28,9 @@ draft: false
 
 前面这组数据来自 OpenAI 自家评测，第三方复测尚在进行，读时留一分余量。核心信号不是“满分”，而是**数学/抽象推理/计算机操作三块同时起飞**，整段能力重新排列。
 
-<div markdown="1" style="display:flex; gap:0.5rem;">
-<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/1.png" alt="能力对比" />
-<img style="max-width:280px; height:auto;" src="/img/news/gpt6-astra/2.png" alt="评测数据" />
+<div class="img-row">
+<img src="/img/news/gpt6-astra/1.png" alt="能力对比" />
+<img src="/img/news/gpt6-astra/2.png" alt="评测数据" />
 </div>
 
 ## 三、实测与使用技巧

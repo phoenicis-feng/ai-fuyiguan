@@ -52,4 +52,4 @@
 
 {{ partialCached "head/js.html" . }}
 <script>document.addEventListener("click",function(e){var b=e.target.closest("[data-action=\"toggle-theme\"]");if(!b)return;var d=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",d);localStorage.setItem("theme",d);});(function(){var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);})();</script>
-<style>html{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0}body{margin:0;line-height:1.6}</style>
+<style>html{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0}html[data-theme="light"]{background:#ffffff;color:#0b1020}body{margin:0;line-height:1.6}</style>

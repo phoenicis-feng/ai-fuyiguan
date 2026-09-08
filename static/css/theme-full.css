@@ -2652,3 +2652,29 @@ th {
   }
 }
 
+
+/* ---------- 文章正文：内容作者内联编排的图片行，窄屏自动换行 ---------- */
+.article__body .img-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.article__body .img-row img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+/* 窄屏：让表格在容器内横向滚动，避免撑破版面 */
+@media (max-width: 960px) {
+  .article__body table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

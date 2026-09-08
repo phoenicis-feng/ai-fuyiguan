@@ -15,17 +15,17 @@ IT之家此前报道，Inkling 号称“美国最强开源 AI 模型”，采用
 
 而本次推出的 Inkling-Small 模型同样采用混合专家（MoE）架构，总参数为 276B，激活参数为 12B，规模约为 Inkling 的 1/4，在 NVIDIA GB300 NVL72 系统上训练。
 
-<div markdown="1" style="display:flex; gap:0.5rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/1.png" alt="亮点" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/2.png" alt="亮点" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/3.png" alt="亮点" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
+<div class="img-row">
+<img src="/img/inkling-small/1.png" alt="亮点">
+<img src="/img/inkling-small/2.png" alt="亮点">
+<img src="/img/inkling-small/3.png" alt="亮点">
 </div>
 
 “小号”美国最强开源模型：Inkling-Small 登场，约 1/4 规模提供相近 AI 性能
 
-<div markdown="1" style="display:flex; gap:0.5rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/1.avif" alt="对比" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/2.avif" alt="对比" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
+<div class="img-row">
+<img src="/img/inkling-small/1.avif" alt="对比">
+<img src="/img/inkling-small/2.avif" alt="对比">
 </div>
 
 Thinking Machines 已开放 Inkling-Small 完整权重，同时将其接入 Tinker 微调服务，并在 Tinker Playground 提供文本、图像和音频聊天体验。
@@ -36,9 +36,9 @@ Thinking Machines 称，Inkling-Small 以更低计算量取得接近 Inkling 的
 
 在推理和智能体任务中，Inkling-Small 匹配或超过 Inkling。Humanity’s Last Exam 测试中，Inkling-Small 得分 31.6%，高于 Inkling 的 29.7%。Thinking Machines 称，在每个思考预算下，Inkling-Small 的测试时计算曲线均高于 Inkling。
 
-<div markdown="1" style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/3.avif" alt="对比" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
-<img style="max-width:280px; height:auto;" src="/img/inkling-small/4.avif" alt="对比" style="max-width:92%; height:auto; display:inline-block; vertical-align:top; margin:0.5rem 0.3rem;">
+<div class="img-row">
+<img src="/img/inkling-small/3.avif" alt="对比">
+<img src="/img/inkling-small/4.avif" alt="对比">
 </div>
 
 ## 二、性能与成本要点

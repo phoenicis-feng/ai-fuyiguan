@@ -8,7 +8,7 @@ Body class is composed from section so site-level CSS can target sections.
 <html lang="{{ site.Language.Lang }}" dir="ltr" data-theme="dark"{{ if ne $accent "cyan" }} data-accent="{{ $accent }}"{{ end }}>
 <head>
 <link rel="stylesheet" href="/css/theme-full.css?v={{ $cssHash }}">
-<style>html{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;line-height:1.6}body{margin:0}</style>
+<style>html{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;line-height:1.6}html[data-theme="light"]{background:#ffffff;color:#0b1020}body{margin:0}</style>
   {{ partial "head.html" . }}
 </head>
 <body class="page page--{{ if .IsHome }}home{{ else }}{{ with .Section }}{{ . }}{{ else }}other{{ end }}{{ end }}">
