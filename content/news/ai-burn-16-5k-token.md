@@ -4,8 +4,8 @@ date: 2026-09-08
 author: "弗一"
 description: "Bun 1.4用AI重写底层代码，11天生成超百万行Rust代码，消耗约16.5万美元Token。行业判断传统逐行写代码的开发模式正逐步走向消亡，软件生产方式迎来重大变革。"
 tags: ["AI编程", "Bun", "代码生成", "编程终结", "Rust", "Token成本", "软件开发"]
+categories: ["行业观察"]
 draft: false
-categories: ["AI资讯"]
 cover:
   image: ""
   alt: ""

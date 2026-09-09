@@ -4,6 +4,7 @@ date: 2026-04-24
 author: "苍何"
 description: "前后砸了约4000万token，实测 DeepSeek V4-Pro / Flash：1M上下文标配、Agent 编码有进步但仍有坑、推理知识逼近顶级闭源、底层全面拥抱国产化。"
 tags: ["DeepSeek V4", "长上下文", "Agent Coding", "国产化", "AI实测", "开源模型"]
+categories: ["深度评测"]
 draft: false
 ---
 

@@ -1,16 +1,57 @@
 {{ define "main" }}
-<section class="section">
+  {{ partial "hero.html" . }}
+
+  <section class="section">
     <div class="container">
-      {{ .Content }}
+      <!-- 板块入口：双卡片横向导航 -->
+      <div class="feature-grid" style="max-width:720px;margin-inline:auto;">
+        {{- range site.Params.mainSections }}
+          {{- $sec := site.GetPage (printf "/%s" .) }}
+          {{- $count := len $sec.Pages }}
+          {{- $icon := "mdi:newspaper-variant" }}
+          {{- if eq . "test" }}{{ $icon = "mdi:test-tube" }}{{ end }}
+          <div class="card card--linked">
+            <a class="card__link" href="{{ $sec.RelPermalink }}" aria-label="{{ $sec.Title }}"></a>
+            <div class="card__icon" aria-hidden="true">{{ partial "icon.html" $icon }}</div>
+            <h3 class="card__title">{{ $sec.Title }}</h3>
+            <div class="card__body"><p>{{ $sec.Description | default (printf "%d 篇文章" $count) }}</p></div>
+            <p class="card__count">共 {{ $count }} 篇</p>
+          </div>
+        {{- end }}
+      </div>
+
+      <!-- 分类徽章 -->
+      {{- $cats := site.GetPage "categories" -}}
+      {{- with $cats }}
+      <div class="home-cats" style="margin-top:1.5rem;text-align:center;">
+        {{- range .Data.Terms.ByCount }}
+          <a class="badge badge--count" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span class="badge__count">{{ .Count }}</span></a>
+        {{- end }}
+      </div>
+      {{- end }}
     </div>
   </section>
 
   <section class="section">
     <div class="container">
+      <h2 class="home-section-title">最新文章</h2>
       <div class="article-listing">
-        {{ range where site.RegularPages "Section" "in" site.Params.mainSections }}
+        {{ range first 9 (sort (where site.RegularPages "Section" "in" site.Params.mainSections) "Date" "desc") }}
           {{ partial "post-card.html" . }}
         {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cta">
+    <div class="container">
+      <div class="cta">
+        <h2 class="cta__title">按主题浏览</h2>
+        <p class="cta__subtitle">查看所有分类标签，或进入 AI 资讯板块阅读最新报道。</p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="/categories/">查看分类</a>
+          <a class="btn btn--ghost btn--lg" href="/news/">全部资讯</a>
+        </div>
       </div>
     </div>
   </section>

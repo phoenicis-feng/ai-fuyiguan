@@ -4,6 +4,7 @@ date: 2026-09-08
 author: "机器之心"
 description: "从 S-Space 空间工作区到坐标系混淆：GPT-6 Astra 能在 Blender 搭建可交互 3D 居所，却仍把画面「右」误当「东」；研究揭示模型内部已存在三维空间表征，但可靠使用还差一截。"
 tags: ["GPT-6 Astra", "S-Space", "空间智能", "多模态模型", "3D建模", "机器之心", "AI研究"]
+categories: ["深度评测"]
 draft: false
 ---
 

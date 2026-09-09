@@ -4,6 +4,7 @@ date: 2026-09-08
 author: "弗一"
 description: "Thinking Machines Lab（TML）第二款模型 Inkling-Small 面世，立刻引发行业讨论。"
 tags: ["Inkling-Small","Thinking Machines Lab","MoE","开源模型","AI编程","技术评估"]
+categories: ["模型发布"]
 draft: false
 ---
 

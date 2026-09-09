@@ -4,6 +4,7 @@ date: 2026-09-09
 author: "搜狐 / 机器之心（综合）"
 description: "OpenAI 发布 GPT Images 2.5：精修能力大幅提升、Sketch 手绘参考、模板与评论编辑同步上线，但「灵魂画作」仍频现；实测人像保留、递归画面、黑神话风格与产品设计，噪点问题依旧未解。"
 tags: ["GPT Images 2.5", "OpenAI", "AI绘图", "Sketch", "精修", "灵魂画作", "多模态"]
+categories: ["模型发布"]
 draft: false
 ---
 

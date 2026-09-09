@@ -4,6 +4,7 @@ date: 2026-09-02
 author: "Google DeepMind / 机器之心译"
 description: 'Google 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber：同价 $0.75/$3.75 每百万 token，软件工程和推理大幅跃升；Cyber 版本面向漏洞检测与自动化修补，通过 Fairwind Program 提供；底层由长周期 Agentic Loop 递归优化，其本质是让模型在训练中“自我评估、自己改进”。'
 tags: ["Gemini 3.8", "Flash", "Cyber", "Agentic Loop", "Google DeepMind", "AI模型", "安全", "价格"]
+categories: ["模型发布"]
 draft: false
 ---
 

@@ -2678,3 +2678,68 @@ th {
     white-space: nowrap;
   }
 }
+
+/* ---------- 首页分类区 ---------- */
+.section--tight {
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+.home-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  opacity: 0.7;
+}
+
+/* ---------- 首页板块卡片篇数 ---------- */
+.card__count {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+/* ---------- 暗色模式 CTA 高亮（补全 light 已有的圆角边框） ---------- */
+[data-theme="dark"] .cta {
+  background:
+    radial-gradient(ellipse 80% 110% at 12% 0%,
+      color-mix(in srgb, var(--color-accent) 36%, transparent) 0%, transparent 68%),
+    radial-gradient(ellipse 80% 110% at 88% 100%,
+      color-mix(in srgb, var(--color-secondary) 32%, transparent) 0%, transparent 68%),
+    var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  text-align: center;
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* ---------- 暗色模式 CTA 内边距微调 ---------- */
+.section--cta .container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- 文章列表：限制每行 3 列，窄屏自动缩到 2/1 ---------- */
+.article-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 960px) {
+  .article-listing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- 分类徽章紧凑居中 ---------- */
+.home-cats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+

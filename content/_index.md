@@ -1,9 +1,12 @@
 ---
 title: "AI弗一观"
 description: "AI测评、资讯与行业分析，聚焦前沿大模型与AI应用"
+hero:
+  title: "AI弗一观"
+  titleAccent: "·前沿观察"
+  subtitle: "大模型深度评测 · AI前沿资讯 · 工程科学分析"
+  highlights:
+    - { icon: "mdi:test-tube", label: "深度评测" }
+    - { icon: "mdi:newspaper-variant", label: "前沿资讯" }
+    - { icon: "mdi:chart-bell-curve", label: "行业分析" }
 ---
-
-<div style="text-align:center; font-size:2.2rem; line-height:1.6; margin-top:2rem;">
-<strong>AI弗一观</strong><br>
-<span style="font-size:1.1rem; opacity:0.85;">前沿AI资讯 · 大模型测评 · 工程科学深度分析</span>
-</div>
