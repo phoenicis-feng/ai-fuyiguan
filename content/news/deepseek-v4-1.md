@@ -4,7 +4,7 @@ date: 2026-09-08
 author: "新浪科技 / 机器之心"
 description: "DeepSeek V4.1 Flash 内测突发上线：新结构非简单后训练、长上下文检索快 5.2 倍、SVG 生成快 6 倍、速度 400 token/s、成本低于 2 元；但版本名含「expires-on-0910」，意味着不到 2 天可能失效。"
 tags: ["DeepSeek V4.1", "Flash", "AI模型", "长上下文", "代码生成", "内测", "成本"]
-categories: ["模型发布"]
+categories: ['大模型', 'DeepSeek']
 draft: false
 ---
 

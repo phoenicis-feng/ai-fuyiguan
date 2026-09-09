@@ -4,7 +4,7 @@ date: 2026-09-04
 author: "AI星球"
 description: "OpenAI 新旗舰 GPT-6 Astra 不只聊天，而是能操作浏览器、填表格、跑代码、做 PPT，自己把活干完再交付。ARC-AGI-3 接近满分，价格 2.5 倍上代，值得企业上车吗？"
 tags: ["GPT-6","Astra","OpenAI","AI评测","Agentic","AGI"]
-categories: ["深度评测"]
+categories: ['大模型', 'GPT']
 draft: false
 ---
 

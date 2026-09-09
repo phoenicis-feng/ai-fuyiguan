@@ -4,7 +4,7 @@ date: 2026-09-08
 author: "36氪·硬核看板"
 description: "用真实剪辑笔试与前端项目实测 GPT-6 Astra Ultra 2x：Computer Use 控制 DaVinci Resolve、Blender 建模 + 前端交付；有进步、有坑、更需要人类审美把关。"
 tags: ["GPT-6", "Computer Use", "DaVinci Resolve", "Blender", "前端开发", "AI实测", "Agent", "Spec Coding"]
-categories: ["深度评测"]
+categories: ['大模型评测', 'GPT']
 draft: false
 ---
 

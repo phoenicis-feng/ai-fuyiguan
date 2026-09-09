@@ -4,7 +4,7 @@ date: 2026-09-02
 author: "Google DeepMind / 机器之心译"
 description: "Google 发布 Gemini 3.5 Transcribe：不仅是更精准的语音识别，而是直接把原始音频转为准确、格式化、可编辑的文本；支持实时流式与预录音两种 API，覆盖语音 Agent、实时字幕、会后分析；关键在于理解自然说话风格与自定义词汇，而非简单降噪。"
 tags: ["Gemini 3.5", "Transcribe", "语音识别", "ASR", "Agent", "Google DeepMind", "实时转录"]
-categories: ["模型发布"]
+categories: ['AI研究', 'AI写作', 'Gemini', 'AI工具']
 draft: false
 ---
 

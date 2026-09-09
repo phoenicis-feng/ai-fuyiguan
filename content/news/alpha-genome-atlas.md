@@ -4,7 +4,7 @@ date: 2026-09-09
 author: "DeepMind / 机器之心译"
 description: "DeepMind 发布 AlphaGenome Atlas：覆盖人类全基因组 90 亿种单碱基突变，生成 27000 项分子效应预测，体积 1PB（AlphaFold 30 倍）；引入 AVI 单一指标跨编码/非编码区， 并提供零门槛浏览器检索；从 285 年压缩为静态表，是生命科学的全局测绘。"
 tags: ["AlphaGenome","DeepMind","基因组","AI生命科学","单碱基突变","AVI指标","AlphaFold"]
-categories: ["模型发布"]
+categories: ["AI研究"]
 draft: false
 ---
 

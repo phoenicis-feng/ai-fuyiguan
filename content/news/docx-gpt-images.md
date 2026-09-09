@@ -4,7 +4,7 @@ date: 2026-09-08
 author: "机器之心（基于 OpenAI 官方文档解读）"
 description: "Images 2.5 不仅是画质提升，而是把 AI 生图从「一次生成」推向「持续修改工作流」：高保真度、精准编辑、多轮一致性、复杂指令、真实信息、完整布局、透明背景、风格遵循、光影材质——11张图展示每项升级。"
 tags: ["ChatGPT Images 2.5", "AI生图", "精修", "OpenAI", "多轮编辑", "设计师","图像生成"]
-categories: ["能力实测"]
+categories: ['AI生图', 'GPT']
 draft: false
 ---
 

@@ -2743,3 +2743,70 @@ th {
   gap: 0.5rem;
 }
 
+
+/* ---------- 首页分类导航树 ---------- */
+.grouped-categories {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .grouped-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .grouped-categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cat-group {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+}
+
+.cat-group__name {
+  margin: 0 0 0.75rem 0;
+  font-size: var(--text-base);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-accent);
+}
+
+.cat-group__terms {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.cat-term {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: background var(--transition-base);
+}
+
+.cat-term:hover {
+  background: var(--color-accent-soft);
+  text-decoration: none;
+}
+
+.cat-term__count {
+  font-size: var(--text-xs);
+  color: var(--color-text-dim);
+}
+
+.cat-term--empty {
+  opacity: 0.45;
+  cursor: default;
+}

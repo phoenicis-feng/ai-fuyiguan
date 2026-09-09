@@ -4,7 +4,7 @@ date: 2026-09-06
 author: "新浪科技 / 机器之心"
 description: "GPT-6 Sol 内测速度达 Astra 6 倍，像素沙盒世界原型已生成；同日 OpenAI 曝出内部数据：研究员每天带 3 个 Agent 实习生，Agent 推理 >600 美元/天，目标 2028 年实现「自动化 AI 研究员」；首席科学家 Jacub Pachocki 警告监控失效。"
 tags: ["GPT-6 Sol","OpenAI","Agent","自动化研究","速度对比","监控","AGI"]
-categories: ["模型发布"]
+categories: ['大模型评测', 'DeepSeek']
 draft: false
 ---
 

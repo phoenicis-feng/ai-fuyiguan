@@ -4,7 +4,7 @@ date: 2026-09-08
 author: "弗一"
 description: "报告从模型架构设计、技术参数、基准测试表现、部署生态、成本效率、竞争格局等维度对 Laguna S 2.1 进行系统性技术评估"
 tags: ["Laguna S", "Poolside", "MoE", "开源模型", "AI编程", "技术评估"]
-categories: ["深度评测"]
+categories: ["Benchmark"]
 draft: false
 ---
 

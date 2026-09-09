@@ -4,7 +4,7 @@ date: 2026-09-09
 author: "The New Stack / 机器之心译"
 description: "同一模型、不同 Agent Harness，Token 消耗可达 70 倍差异；这意味着选择模型不如选择如何控制它——上下文压缩、重试策略、工具调用频率才是成本控制的核心。"
 tags: ["Agent Harness", "Token Cost", "Aider", "Claude Code", "OpenClaw", "成本控制", "AI工程"]
-categories: ["行业观察"]
+categories: ["AI Agent", "AI编程"]
 draft: false
 ---
 

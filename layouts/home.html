@@ -2,8 +2,8 @@
   {{ partial "hero.html" . }}
 
   <section class="section">
-    <div class="container">
-      <!-- 板块入口：双卡片横向导航 -->
+    <div class="container container--narrow">
+      <!-- 板块入口 -->
       <div class="feature-grid" style="max-width:720px;margin-inline:auto;">
         {{- range site.Params.mainSections }}
           {{- $sec := site.GetPage (printf "/%s" .) }}
@@ -20,15 +20,34 @@
         {{- end }}
       </div>
 
-      <!-- 分类徽章 -->
-      {{- $cats := site.GetPage "categories" -}}
-      {{- with $cats }}
-      <div class="home-cats" style="margin-top:1.5rem;text-align:center;">
-        {{- range .Data.Terms.ByCount }}
-          <a class="badge badge--count" href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<span class="badge__count">{{ .Count }}</span></a>
+      <!-- 分类导航树 -->
+      <div class="grouped-categories" style="margin-top:2rem;">
+        {{- range site.Params.categoriesGroups }}
+          <div class="cat-group">
+            <h4 class="cat-group__name">{{ .name }}</h4>
+            <div class="cat-group__terms">
+              {{- range .items }}
+                {{- $name := . }}
+                {{- $tagPage := "" }}
+                {{- range site.Taxonomies.categories }}
+                  {{- if eq .Page.LinkTitle $name }}{{ $tagPage = .Page }}{{ end }}
+                {{- end }}
+                {{- with $tagPage }}
+                <a class="cat-term" href="{{ .RelPermalink }}">
+                  <span class="cat-term__label">{{ .LinkTitle }}</span>
+                  <span class="cat-term__count">{{ .Pages | len }}</span>
+                </a>
+                {{- else }}
+                <span class="cat-term cat-term--empty">
+                  <span class="cat-term__label">{{ $name }}</span>
+                  <span class="cat-term__count">0</span>
+                </span>
+                {{- end }}
+              {{- end }}
+            </div>
+          </div>
         {{- end }}
       </div>
-      {{- end }}
     </div>
   </section>
 

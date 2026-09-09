@@ -4,7 +4,7 @@ date: 2026-08-15
 author: "弗一"
 description: "实测 GLM-5.3 的 Agent Loop、长程调度、编程能力与网络攻防表现"
 tags: ["GLM-5.3", "智谱", "Agent Loop", "开源模型", "AI编程", "实测"]
-categories: ["深度评测"]
+categories: ['大模型评测', '开源模型']
 draft: false
 ---
 

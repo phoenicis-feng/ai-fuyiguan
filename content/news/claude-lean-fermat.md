@@ -4,7 +4,7 @@ date: 2026-09-08
 author: "弗一"
 description: "Anthropic 表示，Claude 生成了首个完整、经计算机验证的费马大定理证明，编写了 1300 万行 Lean 代码。"
 tags: ["Claude","Lean","费马大定理","Anthropic","AI数学"]
-categories: ["能力实测"]
+categories: ['AI研究', 'Claude']
 draft: false
 ---
 

@@ -4,7 +4,7 @@ date: 2026-09-06
 author: "新浪科技 / AI信息Gap"
 description: "GPT-6 Astra 上线不到 48 小时，网友整理出十大非官方「邪修」玩法：SVG 鹈鹕骑车测智商、45 分钟生成 3D 游戏、Codex 操控 Canva 画肖像、切换 Claude Code 引擎、开启无限上下文笔记；但每种玩法都伴随 token 消耗、API 价格翻倍和降智风险。"
 tags: ["GPT-6 Astra", "邪修玩法", "Codex", "3D游戏", "SVG", "AI技巧", "Claude Code"]
-categories: ["能力实测"]
+categories: ['大模型', 'GPT']
 draft: false
 ---
 

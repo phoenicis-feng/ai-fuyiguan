@@ -17,11 +17,27 @@ defaultContentLanguage = "zh-cn"
   mainSections = ["news", "test"]
   readingTimePerPage = 100
 
+  [[params.categoriesGroups]]
+    identifier = "ai-zixun"
+    name = "AI资讯"
+    items = ["大模型", "AI Agent", "AI编程", "AI生图", "AI视频", "AI研究"]
+  [[params.categoriesGroups]]
+    identifier = "ai-ceping"
+    name = "AI测评"
+    items = ["大模型评测", "AI编程评测", "AI工具评测", "Benchmark"]
+  [[params.categoriesGroups]]
+    name = "AI工具"
+    items = ["AI写作", "AI编程", "AI生图", "AI视频", "AI Agent"]
+  [[params.categoriesGroups]]
+    name = "AI模型"
+    items = ["GPT", "Claude", "Gemini", "DeepSeek", "开源模型"]
+
 [params.footer]
   address = ""
 
 [menus]
   [[menus.main]]
+    identifier = "home"
     name = "主页"
     pageRef = "/"
     weight = 5
@@ -48,3 +64,96 @@ defaultContentLanguage = "zh-cn"
   [markup.goldmark.renderer]
     unsafe = true
     autoHeadingID = true
+
+
+  [[menus.main]]
+    identifier = "ai-gongju"
+    name = "AI工具"
+    url = "/categories/"
+    weight = 20
+  [[menus.main]]
+    identifier = "ai-moxing"
+    name = "AI模型"
+    url = "/categories/"
+    weight = 25
+
+  [[menus.main]]
+    name = "大模型"
+    url = "/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
+    parent = "ai-zixun"
+    weight = 11
+  [[menus.main]]
+    name = "AI Agent"
+    url = "/categories/ai-agent/"
+    parent = "ai-zixun"
+    weight = 12
+  [[menus.main]]
+    name = "AI编程"
+    url = "/categories/ai%E7%BC%96%E7%A8%8B/"
+    parent = "ai-zixun"
+    weight = 13
+  [[menus.main]]
+    name = "AI生图"
+    url = "/categories/ai%E7%94%9F%E5%9B%BE/"
+    parent = "ai-zixun"
+    weight = 14
+  [[menus.main]]
+    name = "AI视频"
+    url = "/categories/ai%E8%A7%86%E9%A2%91/"
+    parent = "ai-zixun"
+    weight = 15
+  [[menus.main]]
+    name = "AI研究"
+    url = "/categories/ai%E7%A0%94%E7%A9%B6/"
+    parent = "ai-zixun"
+    weight = 16
+  [[menus.main]]
+    name = "大模型评测"
+    url = "/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E8%AF%84%E6%B5%8B/"
+    parent = "ai-ceping"
+    weight = 21
+  [[menus.main]]
+    name = "AI编程评测"
+    url = "/categories/ai%E7%BC%96%E7%A8%8B%E8%AF%84%E6%B5%8B/"
+    parent = "ai-ceping"
+    weight = 22
+  [[menus.main]]
+    name = "AI工具评测"
+    url = "/categories/ai%E5%B7%A5%E5%85%B7%E8%AF%84%E6%B5%8B/"
+    parent = "ai-ceping"
+    weight = 23
+  [[menus.main]]
+    name = "Benchmark"
+    url = "/categories/benchmark/"
+    parent = "ai-ceping"
+    weight = 24
+  [[menus.main]]
+    name = "AI写作"
+    url = "/categories/ai%E5%86%99%E4%BD%9C/"
+    parent = "ai-gongju"
+    weight = 31
+  [[menus.main]]
+    name = "GPT"
+    url = "/categories/gpt/"
+    parent = "ai-moxing"
+    weight = 41
+  [[menus.main]]
+    name = "Claude"
+    url = "/categories/claude/"
+    parent = "ai-moxing"
+    weight = 42
+  [[menus.main]]
+    name = "Gemini"
+    url = "/categories/gemini/"
+    parent = "ai-moxing"
+    weight = 43
+  [[menus.main]]
+    name = "DeepSeek"
+    url = "/categories/deepseek/"
+    parent = "ai-moxing"
+    weight = 44
+  [[menus.main]]
+    name = "开源模型"
+    url = "/categories/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/"
+    parent = "ai-moxing"
+    weight = 45
