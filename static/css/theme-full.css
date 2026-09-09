@@ -2810,3 +2810,36 @@ th {
   opacity: 0.45;
   cursor: default;
 }
+
+/* ---------- 导航栏下拉菜单 ---------- */
+.site-header__nav > ul > li {
+  position: relative;
+}
+.site-header__nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 10rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 0.5rem 0;
+  z-index: 100;
+  box-shadow: var(--shadow-lg);
+  list-style: none;
+}
+.site-header__nav ul ul li a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.site-header__nav ul ul li a:hover {
+  color: var(--color-text);
+  background: var(--color-bg-inset);
+  text-decoration: none;
+}
+.site-header__nav li:hover > ul {
+  display: block;
+}
